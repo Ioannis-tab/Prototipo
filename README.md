@@ -5,7 +5,9 @@ Quedando claro dentro de los términos y condiciones que las personas se comprom
 
 Integrantes:
 Anguiano Guerra Miguel Angeluz y Ruano Ramos Alberto Ioannis: Maquetación y diseño
+
 Navarro Valle Arlene Yareli: Documentación
+
 Aguilera Martinez Karol David: Programación
 
 Tecnologías:
