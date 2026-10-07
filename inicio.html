@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i-Search - Inicio | UTL</title>
+  <link rel="icon" type="image/png" href="imagenes/Logo-Isearch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app">
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="user">
+        <div class="avatar">
+          <img src="imagenes/user.png" alt="Avatar de usuario">
+        </div>
+        <span class="username">Usuario UTL</span>
+      </div>
+
+      <nav class="nav">
+        <a href="inicio.html" class="nav-item activo">Inicio</a>
+        <a href="mis-reportes.html" class="nav-item">Mis reportes</a>
+        <a href="reportar.html" class="nav-item">+Reportar objeto</a>
+        <a href="notificaciones.html" class="nav-item">Notificaciones</a>
+        <a href="contacto.html" class="nav-item">Contacto</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="top">
+        <a href="index.html" class="logout" title="Cerrar sesión">
+          <img src="imagenes/cerrar-sesion.png" alt="Cerrar sesión">
+        </a>
+      </header>
+
+      <section class="feed">
+        <h1 class="feed-t">¿Perdiste algo?</h1>
+
+        <div class="search-box">
+          <input 
+            type="text" 
+            class="search-input" 
+            placeholder="Búscalo aquí! Ejem: mochila, credencial, libreta, etc."
+          >
+          <span class="search-icon">
+            <img src="imagenes/search.png" alt="Buscar">
+          </span>
+        </div>
+
+        <div class="cards"></div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

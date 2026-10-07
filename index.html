@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i-Search - Iniciar Sesión | UTL</title>
+  <link rel="icon" type="image/png" href="imagenes/Logo-Isearch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="contenedor">
+
+    <section class="izq">
+      <h1 class="brand">i-Search</h1>
+      <h2 class="welcomet">Bienvenid@</h2>
+
+      <form id="login" action="inicio.html">
+        <div class="campo">
+          <label for="usuario">Usuario/Matrícula:</label>
+          <input 
+            type="text" 
+            id="usuario" 
+            name="usuario" 
+            class="input" 
+            placeholder="Ej. 24001234" 
+            autocomplete="username"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="password">Contraseña:</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            class="input" 
+            placeholder="••••••••" 
+            autocomplete="current-password"
+            required
+          >
+        </div>
+
+        <button type="submit" class="btn">
+          Iniciar sesión
+        </button>
+
+        <div class="links">
+          <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+          <p class="prompt">¿No tienes cuenta? <a href="registro.html">Crear cuenta</a></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="der" aria-label="Identidad institucional UTL">
+      <div class="logo-box">
+        <img src="imagenes/Logo-Isearch.png" alt="Logotipo i-Search UTL" class="logo">
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

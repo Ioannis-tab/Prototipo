@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i-Search - Realiza tu Reporte | UTL</title>
+  <link rel="icon" type="image/png" href="imagenes/Logo-Isearch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app">
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="user">
+        <div class="avatar">
+          <img src="imagenes/user.png" alt="Avatar de usuario">
+        </div>
+        <span class="username">Usuario UTL</span>
+      </div>
+
+      <nav class="nav">
+        <a href="inicio.html" class="nav-item">Inicio</a>
+        <a href="mis-reportes.html" class="nav-item">Mis reportes</a>
+        <a href="reportar.html" class="nav-item activo">+Reportar objeto</a>
+        <a href="notificaciones.html" class="nav-item">Notificaciones</a>
+        <a href="contacto.html" class="nav-item">Contacto</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="top">
+        <a href="index.html" class="logout" title="Cerrar sesión">
+          <img src="imagenes/cerrar-sesion.png" alt="Cerrar sesión">
+        </a>
+      </header>
+
+      <section class="feed">
+        <h1 class="feed-t">Realiza tu reporte</h1>
+
+        <div class="form-card">
+          <form id="reporte" action="inicio.html">
+            <div class="report-head">
+              <div class="tipo-box">
+                <button type="button" class="btn-tipo">Perdí objeto</button>
+                <button type="button" class="btn-tipo inactivo">Encontré objeto</button>
+              </div>
+
+              <label class="foto-btn" title="Agregar foto">
+                <span>+</span>
+                <input type="file" class="file-input">
+              </label>
+            </div>
+
+            <div class="campo">
+              <label for="titulo">Título de objeto:</label>
+              <input 
+                type="text" 
+                id="titulo" 
+                name="titulo" 
+                class="input" 
+                placeholder="Ej. Mochila negra" 
+                required
+              >
+            </div>
+
+            <div class="campo">
+              <label for="categoria">Categoría:</label>
+              <select id="categoria" name="categoria" class="input" required>
+                <option value="">Selecciona una categoría</option>
+                <option value="electronicos">Electrónicos</option>
+                <option value="credenciales">Credenciales/Documentos</option>
+                <option value="ropa">Ropa/Prendas</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="utiles">Útiles escolares</option>
+                <option value="otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="ubicacion">Ubicación:</label>
+              <input 
+                type="text" 
+                id="ubicacion" 
+                name="ubicacion" 
+                class="input" 
+                placeholder="Ej. Edificio D, aula D11" 
+                required
+              >
+            </div>
+
+            <div class="campo">
+              <label for="fecha">Fecha y hora:</label>
+              <input 
+                type="datetime-local" 
+                id="fecha" 
+                name="fecha" 
+                class="input" 
+                required
+              >
+            </div>
+
+            <div class="campo">
+              <label for="descripcion">Descripción:</label>
+              <textarea 
+                id="descripcion" 
+                name="descripcion" 
+                class="input input-area" 
+                placeholder="Describe brevemente las características del objeto" 
+                required
+              ></textarea>
+            </div>
+
+            <div class="campo">
+              <label for="entrega">Punto de entrega:</label>
+              <input 
+                type="text" 
+                id="entrega" 
+                name="entrega" 
+                class="input" 
+                placeholder="Ej. Módulo de atención / Edificio A" 
+                required
+              >
+            </div>
+
+            <div class="btn-row">
+              <button type="submit" class="btn">
+                Publicar reporte
+              </button>
+              <a href="inicio.html" class="btn btn-cancelar">
+                Cancelar
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+</body>
+</html>

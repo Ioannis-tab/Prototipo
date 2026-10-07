@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i-Search - Inicio | UTL</title>
+  <link rel="icon" type="image/png" href="imagenes/Logo-Isearch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app">
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="user">
+        <div class="avataradmin">
+          <img src="imagenes/user-key.png" alt="Avatar de usuario">
+        </div>
+        <span class="username">Admin UTL</span>
+      </div>
+
+      <nav class="nav">
+        <a href="inicioadmin.html" class="nav-item activo">Inicio</a>
+        <a href="gestionreportes.html" class="nav-item">Gestionar reportes</a>
+        <a href="notificacionesadmin.html" class="nav-item">Notificaciones</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="top">
+        <a href="index.html" class="logout" title="Cerrar sesión">
+          <img src="imagenes/cerrar-sesion.png" alt="Cerrar sesión">
+        </a>
+      </header>
+
+      <section class="feed">
+        <h1 class="feed-t">Actualizaciones</h1>
+
+        <div class="search-box">
+          <input 
+            type="text" 
+            class="search-input" 
+            placeholder="Búscalo aquí! Ejem: mochila, credencial, libreta, etc."
+          >
+          <span class="search-icon">
+            <img src="imagenes/search.png" alt="Buscar">
+          </span>
+        </div>
+
+        <div class="cards">
+          
+          <!-- INICIO DE LAS TARJETAS AGREGADAS -->
+          
+          <!-- Tarjeta de Comentario Flagged 1 -->
+          <article class="card-alert">
+            <div class="alert-header">
+              <span class="alert-badge warning">Posible lenguaje inapropiado</span>
+              <span class="alert-time">Hace 15 min</span>
+            </div>
+            
+            <div class="alert-body">
+              <p class="context-link"><strong>En la publicación:</strong> <a href="#">Termo azul marca Yeti</a></p>
+              <p class="user-info"><strong>Usuario:</strong> Alberto</p>
+              
+              <div class="comment-box">
+                <p>"Ese termo es mío, el que se lo llevó es un <span class="highlight-word">pendejo</span>, devuélvanlo."</p>
+              </div>
+            </div>
+
+            <div class="alert-actions">
+              <button class="btn btn-ignore">Ignorar / Permitir</button>
+              <button class="btn btn-delete">Eliminar comentario</button>
+            </div>
+          </article>
+
+          <article class="card-alert">
+            <div class="alert-header">
+              <span class="alert-badge spam">Posible Spam / Venta</span>
+              <span class="alert-time">Hace 2 horas</span>
+            </div>
+            
+            <div class="alert-body">
+              <p class="context-link"><strong>En la publicación:</strong> <a href="#">Calculadora Casio fx-991</a></p>
+              <p class="user-info"><strong>Usuario:</strong> Kevin</p>
+              
+              <div class="comment-box">
+                <p>"Yo <span class="highlight-word">vendo</span> unas calculadoras iguales más baratas, manden DM para <span class="highlight-word">comprar</span>."</p>
+              </div>
+            </div>
+
+            <div class="alert-actions">
+              <button class="btn btn-ignore">Ignorar / Permitir</button>
+              <button class="btn btn-delete">Eliminar comentario</button>
+            </div>
+          </article>
+          
+        </div>
+      </section>
+    </main>
+
+  </div>
+  
+</body>
+</html>
